@@ -59,3 +59,8 @@ nrow(economics)
 econ2000$month <- month(econ2000$date, label = TRUE)
 econ2000
 
+require(scales)
+
+g <- ggplot(econ2000, aes(x=month, y = pop))
+
+a <- g + geom_
